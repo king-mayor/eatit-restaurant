@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ .btns {
+  @apply text-white bg-orange-400 py-1
+  px-2 rounded-lg cursor-pointer hover:bg-orange-300
+   hover:scale-105 mt-3;
+}
+.parag {
+  @apply text-gray-600 text-lg leading-10;
+}
+.overlaying {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top:100%;
+  left: 0;
+  background-color: #0f172a;
+  color: #ffff;
+  text-align: center;
+  padding-top: 50px;
+  transition: .7s;
+  box-shadow: 3px 4px 5px orange;
+}
