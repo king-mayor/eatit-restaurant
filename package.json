@@ -3,17 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  
+  "homepage": "https://king-mayor.github.io/eatright-restaurant",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "gh": "^2.8.9",
+    "gh-pages": "^6.1.1",
     "pages": "^0.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
