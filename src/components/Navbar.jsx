@@ -36,7 +36,7 @@ function Navbar() {
     setMenu(!menu);
   };
   return (
-    <nav>
+    <nav className="">
       <div className=" bg-light-blue py-4">
         <div
           className="flex justify-around items-center z-40 relative"
@@ -46,7 +46,7 @@ function Navbar() {
           <div>
             <img src={logo} alt="earternity-restaurant" className="w-36" />
           </div>
-          <div>
+          <div className="">
             <ul className="md:flex text-xl gap-8 hidden">
               {NavLinks.map((data) => (
                 <li
@@ -75,7 +75,11 @@ function Navbar() {
             </button>
             {/* {menu links} */}
             {menu && (
-              <ul className="overlaying">
+              <ul
+                className="overlaying"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 {NavLinks.map((data) => (
                   <li className="leading-9 my-8 hover:bg-primary" key={data.id}>
                     <a
