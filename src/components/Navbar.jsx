@@ -75,11 +75,7 @@ function Navbar() {
             </button>
             {/* {menu links} */}
             {menu && (
-              <ul
-                className="overlaying"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
+              <ul className="overlaying">
                 {NavLinks.map((data) => (
                   <li className="leading-9 my-8 hover:bg-primary" key={data.id}>
                     <a
