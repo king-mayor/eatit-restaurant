@@ -3,7 +3,7 @@ import Hero from "../assets/hero.png";
 function Introduction() {
   return (
     <div className="bg-light-blue py-3">
-      <div className="flex md:justify-around items-center md:flex-row flex-col md:text-start text-center gap-10 px-12">
+      <div className="flex md:justify-around items-center md:flex-row flex-col md:text-start text-center gap-10 px-12 py-36">
         <div
           className="md:w-[50%] w-[f100%]"
           data-aos="flip-left"

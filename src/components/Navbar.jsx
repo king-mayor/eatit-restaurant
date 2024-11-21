@@ -36,7 +36,7 @@ function Navbar() {
     setMenu(!menu);
   };
   return (
-    <nav className="">
+    <nav className="fixed right-0 left-0 border-b-2 border-gray-400 z-50">
       <div className=" bg-light-blue py-4">
         <div
           className="flex justify-around items-center z-40 relative"

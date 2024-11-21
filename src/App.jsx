@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function App() {
   }, []);
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden overflow-y-hidden">
         <Navbar />
         <Introduction />
         <About />
@@ -24,6 +25,7 @@ function App() {
         <Testimonials />
         <GetStarted />
         <Links />
+        <ScrollToTop />
         <Footer />
       </main>
     </>
