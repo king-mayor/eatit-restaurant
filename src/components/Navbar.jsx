@@ -64,12 +64,12 @@ function Navbar() {
               {menu ? (
                 <IoMdClose
                   onClick={toggleMenu}
-                  className="text-3xl md:hidden bg-primary text-white font-thin"
+                  className="text-4xl md:hidden text-primary font-thin"
                 />
               ) : (
                 <IoMdMenu
                   onClick={toggleMenu}
-                  className="text-3xl md:hidden bg-primary text-white"
+                  className="text-4xl md:hidden text-primary"
                 />
               )}
             </button>
