@@ -21,7 +21,7 @@ const ScrollToTop = () => {
     <div>
       {scrollToTop && (
         <div
-          className="text-5xl text-black cursor-pointer fixed right-5 bottom-5"
+          className="text-5xl text-black cursor-pointer fixed right-5 bottom-5 z-50"
           onClick={handlescroll}
         >
           <FaArrowCircleUp />
