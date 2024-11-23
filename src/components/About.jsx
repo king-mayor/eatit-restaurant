@@ -28,7 +28,9 @@ function About() {
             recusandae! Reprehenderit mollitia eius id porro accusamus doloribus
             saepe consequatur perferendis vel, cumque maxime libero velit?
           </p>
-          <button className="btns">View Our Menu</button>
+          <button className="bg-orange-600 hover:bg-orange-800 rounded-2xl py-2 px-6 border-none outline-none my-4 text-white">
+            View Our Menu
+          </button>
         </div>
       </div>
     </div>

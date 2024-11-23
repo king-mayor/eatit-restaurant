@@ -35,7 +35,9 @@ function Links() {
           <p className="text-slate-600 text-xl font-bold my-4">
             Cozy Vibes, Unforgettable Moments – Your Perfect Espresso Escape
           </p>
-          <button className="btns">Visit youtube Channel</button>
+          <button className="bg-orange-600 hover:bg-orange-800 rounded-2xl py-2 px-6 border-none outline-none my-4 text-white">
+            Visit youtube Channel
+          </button>
         </div>
         {/* {The links section} */}
         <div

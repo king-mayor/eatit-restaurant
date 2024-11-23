@@ -36,58 +36,71 @@ function Navbar() {
     setMenu(!menu);
   };
   return (
-    <nav className="fixed right-0 left-0 border-b-2 border-gray-400 z-50">
-      <div className=" bg-light-blue py-4">
+    <nav className="fixed right-0 left-0 border-b-2 border-orange-800 shadow-md shadow-orange-700 z-50">
+      <div className=" bg-black py-4">
         <div
-          className="flex justify-around items-center z-40 relative"
+          className="flex lg:justify-around justify-between items-center z-40 relative"
           data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
           <div>
-            <img src={logo} alt="earternity-restaurant" className="w-36" />
+            <img
+              src={logo}
+              alt="earternity-restaurant"
+              className="lg:w-28 w-20"
+            />
           </div>
           <div className="">
             <ul className="md:flex text-xl gap-8 hidden">
               {NavLinks.map((data) => (
-                <li
-                  className="hover:border-b-2 hover:border-orange-400 duration-75"
-                  key={data.id}
-                >
-                  <a href={data.link}>{data.name}</a>
+                <li className="" key={data.id}>
+                  <a
+                    className="text-gray-200 hover:text-orange-800"
+                    href={data.link}
+                  >
+                    {data.name}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
           {/* {Mobile menu} */}
-          <div>
+          <div className="">
             <button>
               {menu ? (
                 <IoMdClose
                   onClick={toggleMenu}
-                  className="text-4xl md:hidden text-primary font-thin"
+                  className="text-4xl md:hidden text-orange-800 font-bold"
                 />
               ) : (
                 <IoMdMenu
                   onClick={toggleMenu}
-                  className="text-4xl md:hidden text-primary"
+                  className="text-4xl md:hidden text-orange-800 font-bold"
                 />
               )}
             </button>
             {/* {menu links} */}
-            {menu && (
-              <ul className="overlaying">
-                {NavLinks.map((data) => (
-                  <li className="leading-9 my-8 hover:bg-primary" key={data.id}>
-                    <a
-                      className="text-xl text-center hover:cursor-pointer"
-                      href={data.link}
-                    >
-                      {data.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
+            <div className="">
+              {menu && (
+                <div className="">
+                  <ul className="overlaying md:hidden">
+                    {NavLinks.map((data) => (
+                      <li
+                        className="leading-9 my-8 hover:bg-orange-800"
+                        key={data.id}
+                      >
+                        <a
+                          className="text-xl text-center hover:cursor-pointer"
+                          href={data.link}
+                        >
+                          {data.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

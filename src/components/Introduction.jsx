@@ -15,11 +15,7 @@ function Introduction() {
             hic soluta aliquid a praesentium architecto reiciendis natus
             expedita modi deleniti.
           </p>
-          <button
-            className="text-white bg-orange-400 py-1
-           px-2 rounded-lg cursor-pointer hover:bg-orange-300
-            hover:scale-105 mt-3"
-          >
+          <button className="bg-orange-600 hover:bg-orange-800 rounded-2xl py-2 px-6 border-none outline-none my-4 text-white">
             View Our Menu
           </button>
         </div>
